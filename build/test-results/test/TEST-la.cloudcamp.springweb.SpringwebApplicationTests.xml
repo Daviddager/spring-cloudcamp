@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="la.cloudcamp.springweb.SpringwebApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-06-21T01:06:10" hostname="DESKTOP-IBOOHOF" time="0.579">
+  <properties/>
+  <testcase name="contextLoads()" classname="la.cloudcamp.springweb.SpringwebApplicationTests" time="0.579"/>
+  <system-out><![CDATA[20:06:09.661 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [la.cloudcamp.springweb.SpringwebApplicationTests]: SpringwebApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+20:06:09.750 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration la.cloudcamp.springweb.SpringwebApplication for test class la.cloudcamp.springweb.SpringwebApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.1)
+
+2024-06-20T20:06:10.045-05:00  INFO 1996 --- [springweb] [    Test worker] l.c.springweb.SpringwebApplicationTests  : Starting SpringwebApplicationTests using Java 17.0.8.1 with PID 1996 (started by drdagerm in /home/drdagerm/cloudcamp/spring-cloudcamp)
+2024-06-20T20:06:10.047-05:00  INFO 1996 --- [springweb] [    Test worker] l.c.springweb.SpringwebApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2024-06-20T20:06:10.912-05:00  INFO 1996 --- [springweb] [    Test worker] l.c.springweb.SpringwebApplicationTests  : Started SpringwebApplicationTests in 1.054 seconds (process running for 1.843)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
