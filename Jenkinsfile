@@ -7,7 +7,7 @@ node('docker'){
     }
     stage('Set Gradlew Perm'){
         sh "chmod +x gradlew"
-        sh "./gradlew tasks"
+        sh "./gradlew task"
     }
     stage('Build BootJar'){
         sh "./gradlew bootJar"
@@ -16,11 +16,11 @@ node('docker'){
         sh "docker build -t ghcr.io/daviddager/spring-cloudcamp/spring:latest ."
     }
     stage('Docker Login to GHCR'){
-        //Inyect token
-        //sh "echo $GH_TOKEN | docker login ghcr.io --passwrd-stdin"
+        withCredentials([string(credentialsId: 'github_token', variable: 'GH_TOKEN')]) {
+            sh "echo ${GH_TOKEN} | docker login ghcr.io -u USERNAME --password-stdin"
+        }
     }
     stage('Docker Push'){
-        //TODO
-        //Docker push to registry
+        sh "docker push ghcr.io/daviddager/spring-cloudcamp/spring:latest"
     }
 }
